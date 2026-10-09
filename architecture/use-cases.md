@@ -26,11 +26,10 @@ flowchart LR
     UC1(["Sign In with SorSU Email"])
     UC5(["Receive Status Notification"])
     UC6(["Review Print Request"])
-    UC7(["Set Print Price"])
-    UC8(["Print Documents"])
-    UC9(["Accept Delivery Job"])
-    UC10(["Deliver Printouts"])
-    UC11(["Confirm Cash Payment"])
+    UC7(["Print Documents"])
+    UC8(["Accept Delivery Job"])
+    UC9(["Deliver Printouts"])
+    UC10(["Confirm Cash Payment"])
   end
 
   student --- UC1
@@ -44,12 +43,11 @@ flowchart LR
   UC5 --- staff
   UC6 --- staff
   UC7 --- staff
-  UC8 --- staff
   UC1 --- runner
   UC5 --- runner
+  UC8 --- runner
   UC9 --- runner
   UC10 --- runner
-  UC11 --- runner
 
   style SYS fill:#ffffff,stroke:#444444
 ```
